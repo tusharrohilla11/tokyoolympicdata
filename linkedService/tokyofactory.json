@@ -1,0 +1,12 @@
+{
+	"name": "tokyofactory",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "GitHub",
+		"typeProperties": {
+			"username": "tusharrohilla11",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDNBNDM4Mjc3LTgxM0UtNDI2Qi1CQjk3LTEyQTJGMDJCRTVEQ181OGE2NTZkOS01ZTkxLTQyMWMtYTQxZC1kM2IxZGFjY2EyOGQiDQp9"
+		}
+	}
+}

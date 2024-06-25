@@ -1,0 +1,9 @@
+{
+	"name": "tokyo-olympic-data-factoryyyyyy",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b29220c4-af5c-4e60-9ccf-bd2089e9835f",
+		"tenantId": "3b4a7e9a-a78e-435c-b22e-5aa8223d2c25"
+	}
+}

@@ -1,7 +1,7 @@
 {
-	"name": "athletes",
+	"name": "teams",
 	"properties": {
-		"Name": "athletes",
+		"Name": "teams",
 		"EntityType": "TABLE",
 		"Namespace": {
 			"DatabaseName": "tokyolakedb"
@@ -14,7 +14,20 @@
 		"StorageDescriptor": {
 			"Columns": [
 				{
-					"Name": "PersonName",
+					"Name": "TeamName",
+					"OriginDataTypeName": {
+						"TypeName": "string",
+						"IsComplexType": false,
+						"IsNullable": true,
+						"Length": 8000,
+						"Properties": {
+							"HIVE_TYPE_STRING": "string"
+						}
+					},
+					"DeltaFormatInvalidMessages": []
+				},
+				{
+					"Name": "Discipline",
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -40,7 +53,7 @@
 					"DeltaFormatInvalidMessages": []
 				},
 				{
-					"Name": "Discipline",
+					"Name": "Event",
 					"OriginDataTypeName": {
 						"TypeName": "string",
 						"IsComplexType": false,
@@ -59,7 +72,7 @@
 				"FormatType": "csv",
 				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
 				"Properties": {
-					"path": "abfss://tokyoolympicdatadata@tokyolympicdatapro.dfs.core.windows.net/transform data/athletes/part-00000-tid-6004327091073577574-95ae1964-1788-4467-93cc-2a82e88a8044-13-1-c000.csv",
+					"path": "abfss://tokyoolympicdatadata@tokyolympicdatapro.dfs.core.windows.net/transform data/teams/part-00000-tid-5142572802842060776-0c01647b-6be8-4568-8e14-48e110e22991-34-1-c000.csv",
 					"delimiter": ",",
 					"multiLine": "false",
 					"firstRowAsHeader": "true",
@@ -70,7 +83,7 @@
 			},
 			"Source": {
 				"Provider": "ADLS",
-				"Location": "abfss://tokyoolympicdatadata@tokyolympicdatapro.dfs.core.windows.net/transform data/athletes/part-00000-tid-6004327091073577574-95ae1964-1788-4467-93cc-2a82e88a8044-13-1-c000.csv",
+				"Location": "abfss://tokyoolympicdatadata@tokyolympicdatapro.dfs.core.windows.net/transform data/teams/part-00000-tid-5142572802842060776-0c01647b-6be8-4568-8e14-48e110e22991-34-1-c000.csv",
 				"Properties": {
 					"LinkedServiceName": "tokyo-olympic-synaps-WorkspaceDefaultStorage",
 					"LocationSetToDatabaseDefault": false
@@ -78,7 +91,7 @@
 			},
 			"Properties": {
 				"textinputformat.record.delimiter": ",",
-				"compression": "{\"type\":\"None\",\"level\":\"optimal\"}",
+				"compression": "",
 				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
 			},
 			"Compressed": false,

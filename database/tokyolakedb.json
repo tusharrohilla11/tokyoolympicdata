@@ -1,0 +1,22 @@
+{
+	"name": "tokyolakedb",
+	"properties": {
+		"Name": "tokyolakedb",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://tokyoolympicdatadata@tokyolympicdatapro.dfs.core.windows.net/tokyolakedb",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "tokyo-olympic-synaps-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}

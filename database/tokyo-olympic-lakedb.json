@@ -1,0 +1,22 @@
+{
+	"name": "tokyo-olympic-lakedb",
+	"properties": {
+		"Name": "tokyo-olympic-lakedb",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://tokyoolympicdatadata@tokyolympicdatapro.dfs.core.windows.net/tokyo-olympic-lakedb",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "tokyo-olympic-synaps-WorkspaceDefaultStorage"
+			}
+		}
+	},
+	"type": "DATABASE"
+}
